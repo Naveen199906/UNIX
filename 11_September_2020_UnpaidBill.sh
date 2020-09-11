@@ -3,4 +3,4 @@ awk 'BEGIN{FS=";";count=0}
 END{ 
     if(count==0){print "Everybody Paid"}
     else{ for (i in a) {print i,"owes",a[i]}}
-}'
+}' |sort -k1
